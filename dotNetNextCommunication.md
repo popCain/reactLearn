@@ -29,3 +29,11 @@ sequenceDiagram
     - ブラウザ外部通信(CORS: api server need to add trust origin url)
 - DotNet Core(HTTPS) ----> NEXT(HTTP)
     - SPA Proxy(publish file)
+
+> **Problem:**
+
+- NEXTのHTTPS化問題
+    - NEXT公式から「カスタマイズサーバー」非推奨（nginx/apacha reverse proxy??）
+- NEXT/REACTログ問題
+    - フリーモジュール少ない
+- NEXT/REACTユニットテスト問題
