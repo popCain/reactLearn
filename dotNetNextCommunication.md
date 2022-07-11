@@ -4,6 +4,10 @@
 git clone 
 ```
 
+```bash
+dotnet run
+```
+
 ## NEXTフロントとDotNet Core通信
 
 ```mermaid
@@ -17,3 +21,11 @@ sequenceDiagram
     NEXT SERVER->>NEXT FRONT: JSON Response(async/await)
     NEXT FRONT->>NEXT FRONT: File System Base: '/WeatherForcast'(Dynamic Routes)
 ```
+
+> **Attention:**
+
+- NEXT(HTTP) ----> DotNet Core(HTTPS)
+    - サーバー内部通信(Axios: Https Agent)
+    - ブラウザ外部通信(CORS: api server need to add trust origin url)
+- DotNet Core(HTTPS) ----> NEXT(HTTP)
+    - SPA Proxy(publish file)
