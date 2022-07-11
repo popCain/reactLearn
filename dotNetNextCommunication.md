@@ -35,5 +35,6 @@ sequenceDiagram
 - NEXTのHTTPS化問題
     - NEXT公式から「カスタマイズサーバー」非推奨（nginx/apacha reverse proxy??）
 - NEXT/REACTログ問題
-    - フリーモジュール少ない
+    - フリーモジュール少ない(browser: console.log server: stdout --> Pino構造化ログ)
+    - 課金：![logflare](https://logflare.app/pricing)と![sentry](https://sentry.io/pricing/)
 - NEXT/REACTユニットテスト問題
