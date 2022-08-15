@@ -12,7 +12,7 @@ sequenceDiagram
     GO API->>NEXT SERVER: JSON Response(async/await)
     NEXT SERVER->>NEXT FRONT: JSON Response(async/await)
     NEXT FRONT->>NEXT FRONT: File System Base(Dynamic Routes)
-    NEXT FRONT->>DAIDAI SERVER: window.location
+    NEXT FRONT->>DAIDAI: window.location
 ```
 
 > **Attention:**
